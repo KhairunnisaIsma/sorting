@@ -24,7 +24,7 @@ public class InsertionSort {
                 j--;  
             }       
             arr[j+1] = key; 
-            System.out.println("Swapping Elements:");
+            //System.out.println("Swapping Elements:");
             printArray(arr);
             iteration++;
         }
