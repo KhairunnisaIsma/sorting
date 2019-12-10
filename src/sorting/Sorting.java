@@ -23,6 +23,8 @@ public class Sorting {
             System.out.println("1. Bubble Sort");
             System.out.println("2. Bubble Sort Fast");
             System.out.println("3. Insertion Sort");
+	    System.out.println("4. Selection Sort");
+            System.out.print("Pilih : ");
             menu = scan.nextInt();
             switch(menu){
                 case 1:
@@ -41,6 +43,12 @@ public class Sorting {
                     System.out.println("-----Insertion Sort-----");
                     InsertionSort insertion = new InsertionSort();
                     insertion.insertionSort(arr);
+                    menu = 0;
+                    break;
+		case 4:
+                    System.out.println("-----Selection Sort-----");
+                    SelectionSort selection = new SelectionSort();
+                    selection.selectionSort(arr);
                     menu = 0;
                     break;
                 default:
